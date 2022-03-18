@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    background-image: url('iabzd-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+.intro {
+    display: flex;
+    background-color: rgb(27, 174, 174);
+    letter-spacing: 5px;
+    padding: 0.5em;
+    justify-content: center;
+    font-family: 'Dosis';
+    font-variant: small-caps;
+}
+
+#intro {
+    margin-left: 5px;
+}
+
+fieldset {
+    margin: 10px;
+    border: solid 2px rgb(27, 174, 174);
+}
+
+fieldset p {
+    font-family: 'Syne Mono';
+    margin: 10px;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    margin-left: 5px;
+}
+
+legend {
+    font-family: 'Dosis';
+    background-color: #dee3dd;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.fa-angle-left {
+    font-size: 40px;
+    margin-left: 10px;
+    color: rgb(27, 174, 174);
+    transition: padding .4s ease-in-out, background-color .4s ease-in-out, border-radius .4s ease-in-out;
+}
+
+.fa-angle-left:hover {
+    padding: 3px;
+    background-color: black;
+    border-radius: 40%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+details {
+    color: rgb(27, 174, 174);
+    font-weight: bolder;
+    font-size: 1.1em;
+    font-family: 'Dosis';
+}
+
+details p {
+    font-size: 13px;
+    color: rgb(27, 174, 174);
+}
+
+.fa-instagram,
+.fa-twitter,
+.fa-snapchat-ghost {
+    font-size: 30px;
+    margin: 0 15px;
+}
+
+.foot p {
+    font-weight: 500;
+}
+
+@media screen and (min-width:800px) {
+    .foot {
+        position: relative;
+        top: 20%;
+    }
+    .foot p {
+        margin-right: 50%;
+    }
+}

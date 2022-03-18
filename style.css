@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-con {
+    width: 100%;
+    background-image: url("meezy-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.intro {
+    margin-bottom: 50%;
+    text-align: center;
+}
+
+.int {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-angle-right {
+    color: rgb(27, 174, 174);
+    height: fit-content;
+    font-size: 45px;
+    transition: background-color .4s ease-in-out, border-radius .4s ease-in-out, padding .4s ease-in-out;
+}
+
+.fa-angle-right:hover {
+    background-color: #dee3dd;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.intro p {
+    margin-top: 20px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 14px;
+}
+
+.sub {
+    margin-bottom: 5px;
+}
+
+.intro h1 {
+    font-size: 30px;
+    font-family: 'Syne Mono';
+    color: rgb(27, 174, 174);
+    font-variant: small-caps;
+    text-shadow: -3px 4px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.sub h4 {
+    font-size: 14px;
+    color: rgb(27, 174, 174);
+    font-weight: bold;
+    font-style: oblique;
+    font-family: monospace;
+    text-shadow: -3px 4px 5px black;
+    animation: slideInFromLeft 6s ease-in-out forwards infinite alternate;
+}
+
+details {
+    color: #dee3dd;
+    font-weight: bolder;
+    font-size: 1.1em;
+    font-family: 'Dosis';
+}
+
+details p {
+    font-size: 13px;
+    color: rgb(27, 174, 174);
+}
+
+.sec-con {
+    width: 100%;
+    background-image: url("meezy-unsplash.jpg");
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.sec-con p {
+    color: #dee3dd;
+    text-align: left;
+    font-family: 'IBM Plex Sans Condensed';
+    font-size: 15px;
+}
+
+h5 {
+    color: rgb(27, 174, 174);
+    font-size: 18px;
+    font-family: 'Syne Mono';
+    font-variant: small-caps;
+}
+
+span {
+    color: #dee3dd;
+    font-weight: 600;
+}
+
+.tea {
+    color: rgb(27, 174, 174);
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    margin-top: 20px;
+    background-color: #dee3dd;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 15px 0 15px 0;
+}
+
+.nav a {
+    transition: background .4s ease-in-out, padding .4s ease-in-out;
+    text-decoration: none;
+    font-family: 'dosis';
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav a:hover {
+    background: white;
+    padding: 5px;
+}
+
+a:visited {
+    color: teal;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #fff;
+    width: 200px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: transform;
+    transition-duration: .4s;
+    transition-delay: .1s;
+    transition-timing-function: linear;
+}
+
+.btn:hover {
+    background-color: #6fd649;
+    transform: scale(0.9);
+}
+
+.fa-check-circle {
+    color: rgb(34, 239, 41);
+    font-size: 45px;
+    margin-top: -50px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fa-angrycreative {
+    color: #6fd649;
+    font-size: 40px;
+    animation: rotate 7s forwards infinite alternate;
+}
+
+.pop-up {
+    width: 250px;
+    padding: 0 30px 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    color: #333;
+    visibility: hidden;
+    transition: tranform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 75%;
+    transform: translate(-50%, -30%) scale(1);
+}
+
+.pop-up p {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.pop-up button {
+    margin-top: 10px;
+    padding: 0 5px;
+    width: 100%;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pop-up h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-40%);
+    }
+    100% {
+        transform: translateX(80%);
+        color: #dee3dd;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        color: teal;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .main-con {
+        padding: 1em;
+        display: flex;
+        align-items: unset;
+    }
+    .intro h1 {
+        font-size: 45px;
+        text-shadow: -3px 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    .intro p {
+        margin-top: 15px;
+        width: 310px;
+        font-size: 18px;
+    }
+    .para {
+        display: flex;
+        justify-content: space-between;
+    }
+    .p {
+        text-align: right;
+    }
+    .a {
+        text-align: left;
+    }
+    section {
+        position: relative;
+        bottom: 400px;
+    }
+    input {
+        width: 300px;
+        border-radius: 6px;
+        border: 0;
+        font-size: 14px;
+        padding: 5px 15px;
+        margin-bottom: 5px;
+    }
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn {
+        width: 300px;
+    }
+    .sub h4 {
+        font-size: 18px;
+        color: teal;
+        font-style: oblique;
+        text-shadow: -3px 4px 5px black;
+        animation: slideInFromLeft 6s ease-in-out forwards infinite alternate;
+    }
+    .fa-angrycreative {
+        font-size: 65px;
+        animation: rotate 6s forwards infinite alternate;
+        position: relative;
+        right: 120px;
+    }
+    .fa-angle-right {
+        height: fit-content;
+        font-size: 50px;
+        margin-top: 5px;
+        transition: background-color .4s ease-in-out, border-radius .4s ease-in-out, padding .4s ease-in-out;
+    }
+    h5 {
+        color: teal;
+        font-size: 20px;
+        font-family: 'Syne Mono';
+    }
+    .f1 {
+        text-align: right;
+    }
+    .sub h4 {
+        font-family: monospace;
+        text-shadow: -3px 4px 5px black;
+        animation: slideInFromLeft 9s ease-in-out forwards infinite alternate;
+    }
+    .pop-up {
+        width: 300px;
+    }
+    .open-popup {
+        visibility: visible;
+        top: 80%;
+        transform: translate(-50%, -30%) scale(1);
+    }
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-10%);
+        }
+        100% {
+            transform: translateX(90%);
+            color: #dee3dd;
+        }
+    }
+}
